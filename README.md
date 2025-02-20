@@ -1,10 +1,10 @@
 # Cibersecurity Summit 2025 site
 
-<image style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;" src="src/assets/images/miniatura.png" alt="Turismo Asturias Rutas al paraiso landing page">
+<image style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;" src="src/assets/images/miniatura.png" alt="Cibersecurity Summit 2025 site">
 
 ## Link
 
-https://cibersecuritysummit.netlify.app
+https://ciberseguridadsummit.netlify.app
 
 ## Descripción
 
