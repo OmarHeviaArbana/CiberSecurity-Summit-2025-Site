@@ -14,9 +14,9 @@ body {
 }
 
 main {
-  padding: 30px 18px 130px 18px;
-  @container (min-width: 600px) { padding: 40px 30px 150px 30px;}
-  @container (min-width: 1200px) { padding: 40px 50px 170px 50px; }
+  padding: 30px 18px 80px 18px;
+  @container (min-width: 600px) { padding: 40px 30px 100px 30px;}
+  @container (min-width: 1200px) { padding: 40px 50px 120px 50px; }
   container-type:   inline-size;
 }
 

@@ -1,8 +1,30 @@
-# UOC Boilerplate
+# Cibersecurity Summit 2025 site
 
-UOC Boilerplate is a starter template for the HTML and CSS Tools courses from the [Master's Program in Multimedia Applications](https://estudis.uoc.edu/ca/masters-universitaris/aplicacions-multimedia/presentacio) and the [Master's Program in Web App and Website Development](https://estudis.uoc.edu/ca/masters-universitaris/desenvolupament-llocs-aplicacions-web/presentacio) at the [Universitat Oberta de Catalunya](https://www.uoc.edu). It aims to provide a basic, modern frontend web development starter pack based on Parcel and including a Sass compiler, an ES6 transpiler, minifiers, an image transformer, and development tools.
+<image style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;" src="src/assets/images/miniatura.png" alt="Turismo Asturias Rutas al paraiso landing page">
 
-This is the 3.x version of UOC Boilerplate, available since the UOC 2020-2 semester.
+## Link
+
+https://cibersecuritysummit.netlify.app
+
+## Descripción
+
+Web dedicada a un evento orientado a la seguridad informática y otras actividades. Se utilizan nuevas características de CSS moderno mediante SCSS, metodologías BEM y Stylelint de control.
+
+**Autor:** Omar Hevia Arbana
+**Fecha:** Enero 2025
+
+---
+
+# Cibersecurity Summit 2025 site
+
+## Description
+
+Web dedicated to an event focused on cybersecurity and other activities. Modern CSS features are implemented using SCSS, BEM methodologies, and Stylelint for control.
+
+**Author:** Omar Hevia Arbana
+**Date:** Enero 2025
+
+---
 
 ## Requirements
 
@@ -21,25 +43,24 @@ Using the Terminal, navigate to the project folder and run `npm install`.
 
 ### Stylesheets
 
-- [Sass/SCSS](https://sass-lang.com) to CSS compilation.
-- Minification and optimization of CSS files on production builds with [`cssnano`](https://github.com/cssnano/cssnano) (`@parcel/optimizer-cssnano`).
-- [PostCSS](https://postcss.org/) features:
-  - Transpile modern CSS with [`postcss-preset-env`](https://preset-env.cssdb.org/features).
-  - Automatically add CSS prefix to unsupported properties with [`autoprefixer`](https://autoprefixer.github.io/).
+- [Sass/SCSS](https://sass-lang.com) to CSS compilation (`@parcel/transformer-sass`).
+- Transpilation of modern CSS synthax to support older bvrowsers, based on `browserslist`, including vendor prefixing and synthax lowering, with [PostCSS](https://postcss.org/) (`@parcel/transformer-postcss`).
+- Minification and optimization of CSS files on production builds with [`lightningcss`](https://github.com/parcel-bundler/lightningcss) (`@parcel/optimizer-css`).
 
 ### HTML
 
 - Minification and optimization of CSS files on production builds [`htmlnano`](https://github.com/posthtml/htmlnano) (`@parcel/optimizer-htmlnano`).
-- [PostHTML](https://github.com/posthtml/posthtml) features:
+- [PostHTML](https://github.com/posthtml/posthtml) (`@parcel/transformer-posthtml`) features:
   - Include partial HTML files with [`posthtml-include`](https://github.com/posthtml/posthtml-include).
 
 ### Scripts
 
-- Allow for modern JavaScript (ES201x/ES8/ES7/ES6…) which is automatically transpiled (for the older browsers set in the `package.json`) and minifed in production builds, with [Babel](https://babeljs.io/).
+- Transpilation of modern JavaScript synthax to support older browsers, based on `browserslist`, with with [Babel](https://babeljs.io/) (`@parcel/transformer-babel`).
+- Minification and optimization of JS code with [SWC](https://swc.rs/) (`@parcel/optimizer-swc`).
 
 ### Images
 
-- Image transformation with [`@parcel/transformer-image`](https://parceljs.org/recipes/image/) (based on [`sharp`](https://sharp.pixelplumbing.com/)).
+- Image transformation with [`sharp`](https://sharp.pixelplumbing.com/) ([`@parcel/transformer-image`](https://parceljs.org/recipes/image/)).
 
 ### Development
 
@@ -60,9 +81,5 @@ Always run the following commands during the development stage and for productio
 | `npm run build` | Compiles and minifies and optimizes the files in the assets folder. The generated compiled and optimized files are located in the `dist/` folder. This is what _must be run_ before publishing the project. This is also the build command to be run by external deployment services such as Netlify. The publishable files are then located in the `dist/` folder. |
 | `npm run clean` | Deletes the current `/dist` folder and cache folders.                                                                                                                                                                                                                                                                                                               |
 | `npm run test`  | Displays a success message if everything is working as expected.                                                                                                                                                                                                                                                                                                    |
-
-## Need help? / Want to help out?
-
-Feel free to create a [new issue](https://github.com/uoc-advanced-html-css/uoc-boilerplate/issues/new/) or drop me a line at jorditarrida@uoc.edu.
 
 Are you using this Boilerplate for your projects or for educational purposes? I would love to hear about it!
